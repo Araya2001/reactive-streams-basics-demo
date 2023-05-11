@@ -1,0 +1,13 @@
+spring:
+  mvc:
+    converters:
+      preferred-json-mapper: jackson
+  application:
+    name: REACTIVE-STREAMS-BASICS-DEMO
+server:
+  http2:
+    enabled: true
+  port: ${PORT:8080}
+  netty:
+    connection-timeout: 45000
+    idle-timeout: 45000
